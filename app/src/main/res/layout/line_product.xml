@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/img_line_Cake"
+            android:src="@drawable/splashscreen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:maxLines="1"
+            android:singleLine="true"
+            android:id="@+id/txt_line_name_Cake"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Bánh trà xanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:maxLines="1"
+            android:singleLine="true"
+            android:id="@+id/txt_line_price_Cake"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:text="200.000 đ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

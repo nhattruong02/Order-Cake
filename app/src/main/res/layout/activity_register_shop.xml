@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/register_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Đăng ký cửa hàng"
+            android:textColor="#7F586A"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_below="@id/register_shop"
+            android:inputType="text"
+            android:id="@+id/edt_register_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Tên cửa hàng"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_below="@id/edt_register_shop_name"
+            android:id="@+id/edt_register_shop_description"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Mô tả"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_below="@id/edt_register_shop_description"
+            android:inputType="text"
+            android:id="@+id/edt_register_shop_address"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Địa chỉ"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_below="@id/edt_register_shop_address"
+            android:id="@+id/edt_register_shop_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Số điện thoại"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textSize="30dp" />
+
+        <EditText
+            android:layout_below="@id/edt_register_shop_phone_number"
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/edt_register_shop_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Avatar"
+            android:paddingLeft="10dp"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_below="@id/edt_register_shop_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btn_register_shop"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="#7F586A"
+                android:text="Đăng ký"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_marginRight="20dp"
+                android:id="@+id/btn_exit_register_shop"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="#7F586A"
+                android:text="Thoát"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

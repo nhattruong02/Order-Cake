@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/img_line_category"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+    <TextView
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/text"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/txt_line_category_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Dưới 200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

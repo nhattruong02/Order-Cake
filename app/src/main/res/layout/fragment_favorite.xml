@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroud">
+    <TextView
+        android:id="@+id/txt_favorite"
+        android:layout_marginTop="10dp"
+        android:textColor="#7F586A"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:textSize="30sp"
+        android:text="Sở thích"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:divider="@color/backgroud"
+        android:dividerHeight="10dp"
+        android:id="@+id/lv_favorite"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

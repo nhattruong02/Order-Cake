@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_shop_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/icon_back" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_view_shop_avatar"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/img_shop_back"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/splashscreen"
+            app:civ_border_color="@color/cardview_shadow_start_color"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/txt_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/civ_view_shop_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:paddingBottom="10dp"
+            android:id="@+id/txt_shop_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_shop_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Bánh theo loại"
+                android:textColor="@color/text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <GridView
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:nestedScrollingEnabled="true"
+                android:id="@+id/gv_by_category"
+                android:numColumns="3"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Sản phẩm bán chạy"
+                android:textColor="@color/text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <GridView
+                android:nestedScrollingEnabled="true"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:id="@+id/gv_best_seller"
+                android:numColumns="2"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Sản phẩm mới"
+                android:textColor="@color/text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <GridView
+                android:nestedScrollingEnabled="true"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:id="@+id/gv_new_Cake"
+                android:numColumns="2"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
